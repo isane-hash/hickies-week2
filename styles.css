@@ -1,0 +1,274 @@
+    .body {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 750px;
+        height: auto;
+        border: 1px solid black;
+        margin: 0;
+    }
+    
+    .down {
+        position: relative;
+        background-color: #B0B0B0;
+        position: relative;
+        left: 1%;
+    }
+    
+    .jumbotron {
+        text-align: center;
+    }
+    /* rating stars*/
+    
+    .checked {
+        color: orange;
+    }
+    
+    .review {
+        color: grey;
+        margin: 0 45px;
+    }
+    
+    .price h2 {
+        display: inline;
+        color: red;
+        margin: 0 15px;
+    }
+    
+    .price p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: justify;
+        display: inline-block;
+        color: grey;
+    }
+    
+    .price p span {
+        text-decoration: line-through;
+        margin: 0 10px
+    }
+    
+    .p-color {
+        margin-bottom: 30px;
+    }
+    
+    .color-choose div {
+        display: inline-block;
+    }
+    
+    .color-choose input[type="radio"] {
+        display: none;
+    }
+    
+    .color-choose input[type="radio"]+label span {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        margin: -1px 4px 0 0;
+        vertical-align: middle;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+    
+    .color-choose input[type="radio"]+label span {
+        border: 2px solid #ffffff;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+    }
+    
+    .color-choose input[type="radio"]#red+label span {
+        background-color: red;
+    }
+    
+    .color-choose input[type="radio"]#green+label span {
+        background-color: green;
+    }
+    
+    .color-choose input[type="radio"]#blue+label span {
+        background-color: blue;
+    }
+    
+    .color-choose input[type="radio"]#black+label span {
+        background-color: black;
+    }
+    
+    .color-choose input[type="radio"]#pink+label span {
+        background-color: pink;
+    }
+    
+    .color-choose input[type="radio"]#yellow+label span {
+        background-color: yellow;
+    }
+    
+    .color-choose input[type="radio"]:checked+label span {
+        background-repeat: no-repeat;
+        border: 2px solid red;
+        box-shadow: 0 0 50px #719ECE;
+    }
+    
+    .color-choose input[type="radio"]:hover+label span {
+        border-width: 3px;
+        transform: scale(1.2);
+        transition: all 1s ease;
+        outline: none !important;
+        border: 1px solid red;
+        box-shadow: 0 0 10px #719ECE;
+    }
+    /* list of colors section*/
+    
+    .color h3 span {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 15px;
+        line-height: 28px;
+    }
+    
+    .color-list {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+    }
+    
+    ul li {
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 4px;
+    }
+    
+    ul li a span {
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    /* Hover - list of colors section*/
+    
+    li:hover {
+        border-width: 3px;
+        transform: scale(1.2);
+        transition: all 1s ease;
+        outline: none !important;
+        border: 1px solid red;
+        box-shadow: 0 0 10px #719ECE;
+    }
+    
+    .red :focus {
+        outline: none !important;
+        border: 1px solid red;
+        box-shadow: 0 0 50px #719ECE;
+    }
+    /* form for checkout*/
+    
+    .form1 input {
+        display: inline;
+        padding: 3px;
+        border-radius: 40%;
+    }
+    
+    .form1 button {
+        display: inline-block;
+        color: white;
+    }
+    /* buttons in the modal*/
+    
+    .qty .count {
+        color: #000;
+        display: inline-block;
+        vertical-align: top;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 30px;
+        padding: 0 2px;
+        min-width: 35px;
+        margin: 0 5px;
+        border: 1 solid black;
+    }
+    
+    .qty .plus {
+        cursor: pointer;
+        display: inline-block;
+        vertical-align: top;
+        color: white;
+        width: 30px;
+        height: 30px;
+        font: 30px/1 Arial, sans-serif;
+        text-align: center;
+        border-radius: 50%;
+    }
+    
+    .qty .minus {
+        cursor: pointer;
+        display: inline-block;
+        vertical-align: top;
+        color: white;
+        width: 30px;
+        height: 30px;
+        font: 30px/1 Arial, sans-serif;
+        text-align: center;
+        border-radius: 50%;
+        background-clip: padding-box;
+    }
+    /* Hover - buttons in the modal*/
+    
+    .minus:hover {
+        background-color: red !important;
+    }
+    
+    .plus:hover {
+        background-color: green !important;
+    }
+    /*Prevent text selection*/
+    
+    input {
+        border: 0;
+        width: 2%;
+    }
+    
+    input:disabled {
+        background-color: white;
+    }
+    /* Media screen reduce*/
+    
+    @media screen and (max-width: 740px) {
+        .body {
+            position: relative;
+            width: 450px;
+            height: auto;
+            border: 1px solid black;
+            padding: 10px;
+            margin: 0;
+        }
+        li:hover {
+            border-color: green;
+            border-style: solid;
+            border-width: 3px;
+            transform: scale(1.2);
+            transition: all 1s ease;
+        }
+        .minus:hover {
+            background-color: Red !important;
+        }
+        .plus:hover {
+            background-color: green !important;
+        }
+        .form1 .count {
+            color: #000;
+            display: inline-block;
+            vertical-align: top;
+            font-size: 25px;
+            font-weight: 700;
+            line-height: 30px;
+            padding: 0 2px;
+            min-width: 20px;
+            margin: 0 2px;
+            border: 1 solid black;
+        }
+    }
+    
+    @media screen and (max-width: 460px) {
+        .body {
+            position: relative;
+            width: 300px;
+            height: auto;
+            border: 1px solid black;
+            padding: 10px;
+            margin: 0;
+        }
+    }
